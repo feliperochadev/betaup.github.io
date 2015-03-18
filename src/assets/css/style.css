@@ -1,0 +1,345 @@
+﻿
+/*=============================================================
+    Authour URL: www.designbootstrap.com
+
+    http://www.designbootstrap.com/
+
+    License: MIT
+
+    http://opensource.org/licenses/MIT
+
+    100% Free To use For Personal And Commercial Use.
+
+    IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
+   
+    ========================================================  */
+
+
+
+/*================================
+    GENERAL STYLES
+    ==================================*/
+
+    @import url(http://fonts.googleapis.com/css?family=Roboto); /* GOOGLE FREE FONTS */
+
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    section {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        min-height: 100%;
+    }
+
+    .head-set {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .pad-bottom {
+        padding-bottom: 40px;
+    }
+/*================================
+    NAVBAR STYLES
+    ==================================*/
+    .navbar-default {
+        background-color: #E7E9EC;
+        border-color: transparent;
+        color: #fff;
+    }
+
+    .navbar-default .navbar-nav > li > a{
+        color: #1469EB;
+    }
+
+    .navbar-brand {
+        padding: 0px;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color:#fff;
+    }
+/*================================
+    HOME SECTION STYLES
+    ==================================*/
+
+    /*STYLE OF BACKGROUND IMAGE*/
+    #home {
+        background: url(../img/home.jpg) no-repeat center center; /*Full Witdth background image*/
+        padding: 0;
+        -webkit-background-size: cover;
+        background-size: cover;
+        -moz-background-size: cover;
+        min-height: 600px;
+    }
+    /*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
+    #home .overlay {
+        padding-top: 45px;
+        background-color: rgba(35, 133, 161,0.75); /*.75 opacity of the color so that background image is visible*/
+        min-height: 100%;
+        color: #fff;
+    }
+
+    #home h1 {
+        padding-top: 50px;
+        font-weight: 900;
+        font-size: 40px;
+        font-family: 'Browallia New';
+    }
+    /*SMPLE CLASS TO ADJUST SECTION PADDING & HEIGHT*/
+
+    /*CLASS TO FORMAT TEXT*/
+    .p-cls {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+/*================================
+    SERVICES SECTION STYLES
+    ==================================*/
+
+/*================================
+    TEAM SECTION STYLES
+    ==================================*/
+
+    #team {
+        background-color: rgb(35, 133, 161);
+        color: #fff;
+    }
+
+    .team-title {
+        font-size: 30px;
+        letter-spacing: normal;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .team-subtitle {
+        padding-top: 5px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .row-team {
+        padding-bottom: 80px
+    }
+
+    .col-team {
+        margin-bottom: 50px
+    }
+
+    .wrapper-team-pic {
+        overflow: hidden;
+        position: relative;
+        width: 83%;
+        margin: 0 auto;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .img-team {
+        height: auto;
+        width:  100%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .team-hover-bg {
+        position: absolute;
+        background: #535a6c;
+        /* The Fallback */
+        background-color: rgba(83,90,108,0.0);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -400px;
+        -webkit-transition: all .36s ease-in;
+        -moz-transition: all .36s ease-in;
+        -o-transition: all .36s ease-in;
+        transition: all .36s ease-in;
+    }
+
+    .wrapper-team-pic:hover .team-hover-bg {
+        background-color: rgba(35, 133, 161,0.75);
+        left: 0;
+    }
+
+    .team-icon {
+        opacity: 0;
+        font-size: 40px;
+        position: absolute;
+        text-align: center;
+        padding-top: 0;
+        height: 60px;
+        width: 60px;
+        padding-top: 10px;
+        border: solid 2px #28D8B3;
+        color: #28D8B3;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-transition: all .36s linear;
+        -moz-transition: all .36s linear;
+        -o-transition: all .36s linear;
+        transition: all .36s linear;
+    }
+
+    .wrapper-team-pic:hover .team-icon {
+        opacity: 1
+    }
+
+    .wrapper-team-pic:hover .team-icon:hover {
+        background-color: #28D8B3;
+        color: #FFF;
+    }
+
+    .team-t {
+
+        padding-top: 8px;
+        top: 39%;
+        right: -40%;
+    }
+
+    .team-f {
+        top: -40%;
+        left: 39%;
+    }
+
+    .team-d {
+        top: 39%;
+        left: -40%;
+    }
+
+    .wrapper-team-pic:hover .team-t {
+        right: 12%
+    }
+
+    .wrapper-team-pic:hover .team-d {
+        left: 12%
+    }
+
+    .wrapper-team-pic:hover .team-f {
+        top: 39%
+    }
+
+    @media (max-width:767px) {
+        .wrapper-team-pic {
+            max-width: 300px
+        }
+    }
+
+    @media (min-width:768px) {
+        .wrapper-team-pic {
+            width: 100%
+        }
+
+        .wrapper-team-pic:hover .team-t {
+            right: 14%
+        }
+
+        .wrapper-team-pic:hover .team-d {
+            left: 14%
+        }
+
+        .team-f {
+            top: -40%;
+            left: 39%;
+        }
+
+        .team-icon {
+            font-size: 30px;
+            height: 50px;
+            width: 50px;
+            padding-top: 10px;
+        }
+    }
+
+    @media (min-width:992px) {
+        .wrapper-team-pic:hover .team-t {
+            right: 12%
+        }
+
+        .wrapper-team-pic:hover .team-d {
+            left: 12%
+        }
+
+        .team-f {
+            top: -40%;
+            left: 38%;
+        }
+
+        .team-icon {
+            font-size: 38px;
+            height: 70px;
+            width: 70px;
+            padding-top: 16px;
+        }
+    }
+
+    @media (min-width:1200px) {
+        .wrapper-team-pic {
+            width: 90%
+        }
+
+        .team-f {
+            top: -40%;
+            left: 39.6%;
+        }
+    }
+
+/*================================
+    CONTACT SECTION STYLES
+    ==================================*/
+    #contact{
+        min-height: 90%;
+    }
+
+    #contact h3{
+        font-size: 20px;
+    }
+
+    .conctact-data{
+        padding-top: 50px;
+    }
+
+    #map-container{
+        min-height: 35%;
+    }
+
+    #contact i {
+        padding-right: 10px;
+    }
+
+    #contact p{
+        
+        font-size: 20px;
+        text-align: left;
+        font-weight: 300;
+    }
+/*================================
+    FOOTER SECTION STYLES
+    ==================================*/
+
+    footer {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 900;
+        background-color: rgb(35, 133, 161);
+        color: #fff;
+    }
+
+    footer a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    footer > span > a{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
