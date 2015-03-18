@@ -1,29 +1,3 @@
-/*
-OLDER VERSION
-
-var gulp = require('gulp'),
-	rev = require('gulp-rev'),
-	revReplace = require('gulp-rev-replace'),
-	minifyCSS = require('gulp-minify-css'),
-	uglify = require('gulp-uglify'),
-	imagemin = require('gulp-imagemin'),
-    gulpif = require('gulp-if'),
-    useref = require('gulp-useref'),
-	pngquant = require('imagemin-pngquant');
-
-	gulp.task('default', function() {
-    var assets = useref.assets();
-    return gulp.src('./src/*.html')
-        .pipe(assets)
-        .pipe(gulpif('*.js', uglify()))
-        .pipe(gulpif('*.css', minifyCSS()))
-        .pipe(rev())
-        .pipe(assets.restore())
-        .pipe(useref())
-        .pipe(gulp.dest(''));
-});
-*/
-
 var gulp = require('gulp'),
 rev = require('gulp-rev'),
 revReplace = require('gulp-rev-replace'),

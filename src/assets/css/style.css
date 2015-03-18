@@ -26,6 +26,13 @@
         font-family: 'Roboto', sans-serif;
     }
 
+    body div {
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -o-tranform: translate3d(0,0,0);
+    }
+
     section {
         padding-top: 5%;
         padding-bottom: 5%;
