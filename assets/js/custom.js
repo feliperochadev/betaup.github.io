@@ -11,7 +11,6 @@
 
 //Google Maps Init
 function init_map() {
-    debugger;
     var var_location = new google.maps.LatLng(-22.83395,-45.22665);
 
     var var_mapoptions = {
