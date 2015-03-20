@@ -77,7 +77,6 @@
         -webkit-background-size: cover;
         background-size: cover;
         -moz-background-size: cover;
-        min-height: 600px;
     }
     /*STYLE FOR OVERLAY CLASS - WHICH IS ABOVE IMAGE WITH OPACITY/TRANSPARENCY 0.75*/
     #home .overlay {
@@ -316,6 +315,7 @@
 
     #map-container{
         min-height: 35%;
+        height: 35%;
     }
 
     #contact i {
